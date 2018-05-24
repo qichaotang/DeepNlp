@@ -1,0 +1,32 @@
+{
+  "task_name": "ner_bi_lstm_crf",
+  "model_path": "./result/test/",
+  "word_dim" : 300,
+  "char_dim" : 100,
+  "glove_path" : "./data/glove.6B/glove.6B.300d.txt",
+  "trimmed_path" : "./data/glove.6B.300d.trimmed.npz",
+  "use_pre_trained" : true,
+  "train_path" : "./data/test.txt",
+  "dev_path" : "./data/test.txt",
+  "test_path" : "./data/test.txt",
+  "max_iter" : 0,
+  "words_path" : "./data/words.txt",
+  "tags_path" : "./data/tags.txt",
+  "chars_path" : "./data/chars.txt",
+
+  "train_embeddings" : false,
+  "nepochs" : 15,
+  "dropout" : 0.5,
+  "batch_size" : 20,
+  "lr_method" : "adam",
+  "lr" : 0.001,
+  "lr_decay" : 0.9,
+  "clip" : -1,
+  "nepoch_no_imprv" : 3,
+
+  "char_hidden_size" : 100,
+  "lstm_hidden_size" : 300,
+
+  "use_crf" : true,
+  "use_chars" : true
+}
